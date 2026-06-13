@@ -3,11 +3,20 @@
 ![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 Aplikasi web sederhana untuk mencatat data kunjungan tamu ke sekolah menggunakan PHP, MySQL, dan Bootstrap 5.
 
-Dibuat sebagai tugas UTS Pemrograman Web.
+**Mata Kuliah:** Pemrograman Web II | **Kelas:** IF405 | **NIM:** 230401010104
+
+---
+
+## 📸 Preview Tampilan
+
+### Halaman Formulir Tamu
+![Form Tamu](https://raw.githubusercontent.com/RanzCoder119/MK_PemrogramanWeb-II_2026/main/UTS_RANU_RATMAJA_230401010104/screenshot_form.png)
+
+### Halaman Daftar Tamu
+![Daftar Tamu](https://raw.githubusercontent.com/RanzCoder119/MK_PemrogramanWeb-II_2026/main/UTS_RANU_RATMAJA_230401010104/screenshot_daftar.png)
 
 ---
 
@@ -29,13 +38,14 @@ Dibuat sebagai tugas UTS Pemrograman Web.
 ## 📁 Struktur File
 
 ```
-buku_tamu_digital/
-│
-├── index.php           # Halaman Formulir Tamu
-├── daftar_tamu.php     # Halaman Daftar Tamu
-├── koneksi.php         # Konfigurasi Koneksi Database
-├── db_bukutamu.sql     # Struktur Database + Data Contoh
-└── README.md           # Dokumentasi Proyek
+UTS_RANU_RATMAJA_230401010104/
+├── index.php              # Halaman Formulir Tamu
+├── daftar_tamu.php        # Halaman Daftar Tamu
+├── koneksi.php            # Konfigurasi Koneksi Database
+├── db_bukutamu.sql        # Struktur Database + Data Contoh
+├── screenshot_form.png    # Preview Form
+├── screenshot_daftar.png  # Preview Tabel
+└── README.md              # Dokumentasi Proyek
 ```
 
 ---
@@ -57,64 +67,19 @@ buku_tamu_digital/
 
 ## 🚀 Cara Instalasi
 
-### Persyaratan
-- XAMPP / WAMP / MAMP (Apache + MySQL + PHP)
-- PHP versi 7.4 atau lebih tinggi
-- MySQL / MariaDB versi 5.7 atau lebih tinggi
-
-### Langkah-langkah
-
-**1. Letakkan file proyek**
-```
-Salin folder buku_tamu_digital ke dalam:
-C:/xampp/htdocs/buku_tamu_digital/   (Windows XAMPP)
-/var/www/html/buku_tamu_digital/     (Linux)
-```
-
-**2. Import database**
-- Buka phpMyAdmin: `http://localhost/phpmyadmin`
-- Klik tab **Import**
-- Pilih file `db_bukutamu.sql`
-- Klik **Go / Kirim**
-
-**3. Sesuaikan koneksi** *(jika perlu)*
-
-Buka `koneksi.php` dan sesuaikan:
-```php
-$host = "localhost";
-$user = "root";      // Username MySQL Anda
-$pass = "";          // Password MySQL Anda (kosong jika default XAMPP)
-$db   = "db_bukutamu";
-```
-
-**4. Jalankan aplikasi**
-
-Buka browser dan akses:
-```
-http://localhost/buku_tamu_digital/
-```
+1. Copy folder ke `htdocs/` XAMPP
+2. Import `db_bukutamu.sql` via phpMyAdmin
+3. Sesuaikan `koneksi.php` dengan kredensial MySQL
+4. Akses `http://localhost/UTS_RANU_RATMAJA_230401010104/`
 
 ---
 
 ## 🛡️ Keamanan
 
-- **Prepared Statements** (mysqli) — mencegah SQL Injection
+- **Prepared Statements** — mencegah SQL Injection
 - **`htmlspecialchars()`** — mencegah XSS
-- **Validasi form** — client-side (HTML5 required) + server-side (PHP)
 - **Charset UTF-8** — mendukung karakter Unicode
 
 ---
 
-## 🛠️ Teknologi
-
-| Teknologi | Versi | Fungsi |
-|-----------|-------|--------|
-| PHP | 7.4+ | Backend & Logic |
-| MySQL | 5.7+ | Database |
-| Bootstrap | 5.3.8 | Frontend Framework |
-| Bootstrap Icons | 1.11.3 | Icon Library |
-| Google Fonts (Poppins) | — | Typography |
-
----
-
-*Dibuat untuk keperluan UTS Pemrograman Web — Juni 2026*
+*Dibuat oleh: Ranu Ratmaja — NIM: 230401010104 — UTS Pemrograman Web II 2026*
